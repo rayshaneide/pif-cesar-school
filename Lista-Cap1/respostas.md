@@ -1,6 +1,4 @@
-# Aula 12/08/26
-
-## Pensamento computacional é a habilidade de formular problemas e expressar soluções de forma claras, sem deixar ambíguo.
+ sem deixar ambíguo.
 
 ### Atividade 1
 
