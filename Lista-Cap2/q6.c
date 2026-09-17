@@ -1,0 +1,2 @@
+//a)No trecho A, ++n aumenta o valor de n antes de fornecê-lo para a atribuição, deixando n = 6 e x = 6. No trecho B, m++ fornece o valor antigo de m para y e incrementa m, deixando m = 6 e y = 5 ao final da instrução.
+//b) No trecho A, ++n aumenta o valor de n antes de fornecê-lo para a atribuição, deixando n = 6 e x = 6. No trecho B, m++ fornece o valor antigo de m para y e incrementa m, deixando m = 6 e y = 5 ao final da instrução.
