@@ -1,2 +1,2 @@
 # pif-cesar-school
-Lista de exercicios 1
+feito para anexar as atividades na disciplina de programação imperativa e funcional.
