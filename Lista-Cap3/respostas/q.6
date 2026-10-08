@@ -1,0 +1,25 @@
+*/a) O valor final impresso sera 6.
+b) O operador x++ compara primeiro o valor atual de x e so depois incrementa.
+x = 0 -> compara 0 < 5, verdadeiro, depois x vira 1
+x = 1 -> compara 1 < 5, verdadeiro, depois x vira 2
+x = 2 -> compara 2 < 5, verdadeiro, depois x vira 3
+x = 3 -> compara 3 < 5, verdadeiro, depois x vira 4
+x = 4 -> compara 4 < 5, verdadeiro, depois x vira 5
+x = 5 -> compara 5 < 5, falso, depois x vira 6  
+Como a ultima comparacao tambem incrementa x, o valor final fica 6.
+c) 
+#include <stdio.h>
+
+int main() {
+    int x = 0;
+
+    while (x < 5) {
+        x++;
+    }
+
+    x++;
+
+    printf("Valor final de x = %d\n", x);
+    return 0;
+}
+*\

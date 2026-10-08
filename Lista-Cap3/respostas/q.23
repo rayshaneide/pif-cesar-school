@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int l, linha, coluna;
+
+    printf("Digite o lado do quadrado entre 3 e 20: ");
+    scanf("%d", &l);
+
+    if (l < 3 || l > 20) {
+        printf("Valor invalido.\n");
+    } else {
+        for (linha = 1; linha <= l; linha++) {
+            for (coluna = 1; coluna <= l; coluna++) {
+                if (linha == 1 || linha == l || coluna == 1 || coluna == l) {
+                    printf("X");
+                } else {
+                    printf(" ");
+                }
+            }
+            printf("\n");
+        }
+    }
+
+    return 0;
+}

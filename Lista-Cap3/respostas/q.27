@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main() {
+    int valor;
+    int cedulas100 = 0, cedulas50 = 0, cedulas20 = 0;
+    int cedulas10 = 0, cedulas5 = 0, cedulas2 = 0;
+
+    printf("Digite o valor do saque: ");
+    scanf("%d", &valor);
+
+    if (valor <= 0) {
+        printf("Valor invalido.\n");
+    } else {
+        while (valor >= 100) {
+            valor -= 100;
+            cedulas100++;
+        }
+
+        while (valor >= 50) {
+            valor -= 50;
+            cedulas50++;
+        }
+
+        while (valor >= 20) {
+            valor -= 20;
+            cedulas20++;
+        }
+
+        while (valor >= 10) {
+            valor -= 10;
+            cedulas10++;
+        }
+
+        while (valor >= 5) {
+            valor -= 5;
+            cedulas5++;
+        }
+
+        while (valor >= 2) {
+            valor -= 2;
+            cedulas2++;
+        }
+
+        printf("Cedulas de R$ 100: %d\n", cedulas100);
+        printf("Cedulas de R$ 50: %d\n", cedulas50);
+        printf("Cedulas de R$ 20: %d\n", cedulas20);
+        printf("Cedulas de R$ 10: %d\n", cedulas10);
+        printf("Cedulas de R$ 5: %d\n", cedulas5);
+        printf("Cedulas de R$ 2: %d\n", cedulas2);
+
+        if (valor != 0) {
+            printf("Sobraram R$ %d, pois nao ha cedula disponivel para esse valor.\n", valor);
+        }
+    }
+
+    return 0;
+}

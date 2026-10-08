@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    printf("Usando for:\n");
+    for (i = 0; i <= 100; i++) {
+        printf("%d ", i);
+    }
+
+    printf("\n\nUsando while:\n");
+    i = 0;
+    while (i <= 100) {
+        printf("%d ", i);
+        i++;
+    }
+
+    printf("\n\nUsando do-while:\n");
+    i = 0;
+    do {
+        printf("%d ", i);
+        i++;
+    } while (i <= 100);
+
+    printf("\n");
+
+    /*
+     A estrutura mais adequada para este caso e o for,
+     porque ja sabemos que a contagem vai de 0 ate 100.
+    */
+
+    return 0;
+}

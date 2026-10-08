@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    long long int anterior = 1, atual = 1, proximo;
+
+    printf("Digite o numero do termo desejado: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("Digite um valor positivo.\n");
+    } else if (n == 1) {
+        printf("Termos: 1\n");
+        printf("Valor do termo %d: 1\n", n);
+    } else {
+        printf("Termos: 1 1 ");
+
+        for (i = 3; i <= n; i++) {
+            proximo = anterior + atual;
+            printf("%lld ", proximo);
+            anterior = atual;
+            atual = proximo;
+        }
+
+        printf("\nValor do termo %d: %lld\n", n, atual);
+    }
+
+    return 0;
+}
