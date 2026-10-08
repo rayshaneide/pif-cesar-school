@@ -1,0 +1,26 @@
+//a) Porque a variável soma foi criada dentro do laço For, e ela deveria estar antes do for.
+b) continue (i == 5): pula o número 5
+break (i == 8): cancela e fecha o laço, não mostrando números como 8, 9, 10..
+c)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int i;
+    int soma = 0; // Colocada fora do laço
+
+    for (i = 1; i <= 10; i++) {
+        if (i == 5) continue;
+        if (i == 8) break;
+        
+        soma += i * i;
+    }
+
+    printf("Soma final = %d\n", soma);
+    system("PAUSE");
+
+    return 0;
+}
+
+Cálculo: 1^2 + 2^2 + 3^2 + 4^2 + 6^2 + 7^2
+Resultado = 115
