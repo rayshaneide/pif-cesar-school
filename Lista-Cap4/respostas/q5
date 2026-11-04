@@ -1,0 +1,13 @@
+//a) A saída será:
+a = 0, b = 5, c = 8
+
+
+Como a primeira condição é falsa, o programa não verifica a segunda. Por isso, b continua valendo 5 e c diminui 2.
+
+b) O curto-circuito acontece quando o programa não precisa verificar todas as condições.
+
+No operador &&, se a primeira condição for falsa, a segunda não será verificada.
+
+No operador ||, se a primeira condição for verdadeira, a segunda não será verificada.
+
+c) O valor de b continuará sendo 5 e o valor de c será 20, pois a primeira condição já é verdadeira e o programa executará c += 10.\\

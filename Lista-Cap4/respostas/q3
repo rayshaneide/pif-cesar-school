@@ -1,0 +1,16 @@
+//
+a) O operador ternário verifica se a média é maior ou igual a 7. Se for, a variável situacao recebe 'A'. Caso contrário, recebe 'R'.
+
+Como a média é 6.8, a variável recebe 'R'.
+
+b)
+media = (nota1 + nota2) / 2.0;
+
+if (media >= 7.0) {
+    situacao = 'A';
+} else {
+    situacao = 'R';
+}
+
+
+c) Não. O operador ternário é mais indicado para decisões simples que escolhem entre duas expressões. Quando precisamos executar vários comandos, o if-else é mais adequado.\\

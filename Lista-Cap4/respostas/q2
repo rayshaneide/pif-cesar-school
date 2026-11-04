@@ -1,0 +1,22 @@
+//a) A mensagem exibida será: Opção B
+Isso acontece porque x é maior que 10, mas y não é maior que 10. Portanto, o else do segundo if será executado.
+
+b) Quando não usamos chaves, o else fica associado ao if mais próximo que ainda não possui um else.
+
+c)\\
+
+#include <stdio.h>
+
+int main() {
+    int x = 15, y = 5;
+
+    if (x > 10) {
+        if (y > 10) {
+            printf("Opcao A\n");
+        }
+    } else {
+        printf("Opcao B\n");
+    }
+
+    return 0;
+}

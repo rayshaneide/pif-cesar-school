@@ -1,0 +1,7 @@
+//a) Quando usamos if (x = 0), estamos atribuindo o valor 0 à variável x. Como 0 é considerado falso, o bloco do if não será executado.
+
+Já if (x == 0) compara se x é igual a zero, sem alterar seu valor.
+
+b) Na linguagem C, o número 0 é considerado falso e qualquer valor diferente de zero é considerado verdadeiro, incluindo números negativos.
+
+c) O bloco será executado, pois x = -5 atribui -5 à variável x. Como -5 é diferente de zero, a condição é verdadeira.\\

@@ -1,0 +1,28 @@
+a) Para idade igual a 65, serão exibidas as mensagens:
+Idoso
+Adulto
+Jovem
+
+
+Isso acontece porque os três if são independentes e todas as condições são verdadeiras.
+
+b) Nos if independentes, todas as condições são verificadas. Já no else-if, quando uma condição é verdadeira, as outras não são executadas.
+
+c)
+#include <stdio.h>
+
+int main() {
+    int idade = 25;
+
+    if (idade >= 60) {
+        printf("Idoso\n");
+    } else if (idade >= 18) {
+        printf("Adulto\n");
+    } else if (idade >= 12) {
+        printf("Jovem\n");
+    } else {
+        printf("Crianca\n");
+    }
+
+    return 0;
+}

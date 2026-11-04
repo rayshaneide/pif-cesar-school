@@ -1,0 +1,9 @@
+//a) A saída será:
+Prata
+Ouro\\
+
+//Isso acontece porque o código é 2 e não existe um break depois de imprimir Prata. Assim, o programa continua executando o próximo case até encontrar o break.\\
+
+//b) O break serve para interromper a execução do switch. Quando ele não é utilizado, pode acontecer o chamado fall-through, que é quando o programa continua executando os próximos cases.\\
+
+//c) O switch aceita expressões de tipos inteiros, como int e char, além de tipos enum. Não podemos utilizar float ou double porque o switch trabalha com valores inteiros.\\

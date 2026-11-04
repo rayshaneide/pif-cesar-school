@@ -1,0 +1,21 @@
+printf("Escolha uma opcao: ");
+    scanf("%d", &opcao);
+
+    if (opcao == 1) {
+        total = valor * 0.90;
+        comissao = total * 0.05;
+
+        printf("Valor final: R$ %.2f\n", total);
+        printf("Comissao: R$ %.2f\n", comissao);
+    } else if (opcao == 2) {
+        parcela = valor / 3;
+        comissao = valor * 0.05;
+
+        printf("3 parcelas de R$ %.2f\n", parcela);
+        printf("Comissao: R$ %.2f\n", comissao);
+    } else {
+        printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}

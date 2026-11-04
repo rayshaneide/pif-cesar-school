@@ -1,0 +1,20 @@
+  case '/':
+            if (b != 0) {
+                resultado = a / b;
+                printf("Resultado: %.2f\n", resultado);
+            } else {
+                printf("Nao e possivel dividir por zero.\n");
+            }
+            break;
+
+        case '^':
+            resultado = pow(a, b);
+            printf("Resultado: %.2f\n", resultado);
+            break;
+
+        default:
+            printf("Operacao invalida!\n");
+    }
+
+    return 0;
+}

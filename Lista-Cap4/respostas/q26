@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+int main() {
+    int mes, ano, dias;
+
+    printf("Digite o mes: ");
+    scanf("%d", &mes);
+
+    printf("Digite o ano: ");
+    scanf("%d", &ano);
+
+    if (mes < 1 || mes > 12 || ano <= 0) {
+        printf("Mes ou ano invalido!\n");
+        return 0;
+    }
+
+    switch (mes) {
+        case 1:
+            printf("Janeiro\n");
+            dias = 31;
+            break;
+        case 2:
+            printf("Fevereiro\n");
+            if (ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0)) {
+                dias = 29;
+            } else {
+                dias = 28;
+            }
+            break;
+        case 3:
+            printf("Marco\n");
+            dias = 31;
+            break;
+        case 4:
+            printf("Abril\n");
+            dias = 30;
+            break;
+        case 5:
+            printf("Maio\n");
+            dias = 31;
+            break;
+        case 6:
+            printf("Junho\n");
+            dias = 30;
+            break;
+        case 7:
+            printf("Julho\n");
+            dias = 31;
+            break;
+        case 8:
+            printf("Agosto\n");
+            dias = 31;
+            break;
+        case 9:
+            printf("Setembro\n");
+            dias = 30;
+            break;
+        case 10:
+            printf("Outubro\n");
+            dias = 31;
+            break;
+        case 11:
+            printf("Novembro\n");
+            dias = 30;
+            break;
+        case 12:
+            printf("Dezembro\n");
+            dias = 31;
+            break;
+    }
+
+    printf("Quantidade de dias: %d\n", dias);
+
+    return 0;
+}
